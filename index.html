@@ -1,23 +1,738 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Home</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <!--
-      Need a visual blank slate?
-      Remove all code in `styles.css`!
-    -->
-    <link rel="stylesheet" href="styles.css" />
-    <script type="module" src="script.js"></script>
-  </head>
-  <body>
-    <nav>
-      <a href="/" aria-current="page">Home</a>
-      <a href="/page2.html">Other page</a>
-    </nav>
-    <main>
-      <h1>Home page</h1>
-    </main>
-  </body>
-</html>
+
+
+  <!-- Schema.org JSON-LD 구조화 데이터: ItemList (컨텐츠 요약 및 리스트 제공) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "2026년 개인파산면책 전문 가이드 및 실무 정보 리스트",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@type": "Article",
+          "url": "https://credit.reliabledone.com/guide/intro",
+          "name": "개인파산면책 제도 개요와 2026년 자격 요건 변화",
+          "datePublished": "2026-01-15T09:00:00+09:00",
+          "author": {
+            "@type": "Organization",
+            "name": "법률구조연구네트워크"
+          },
+          "headline": "2026년 기준 개인파산면책 자격 요건 및 지급불능 상태 판단 기준 안내"
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "item": {
+          "@type": "Article",
+          "url": "https://credit.reliabledone.com/guide/difference",
+          "name": "개인회생과 개인파산의 장단점 및 명확한 차이점 비교",
+          "datePublished": "2026-02-10T10:30:00+09:00",
+          "author": {
+            "@type": "Organization",
+            "name": "법률구조연구네트워크"
+          },
+          "headline": "채무 탕감 비율과 자산 유지 가능 여부에 따른 회생 및 파산 비교 분석"
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "item": {
+          "@type": "Article",
+          "url": "https://credit.reliabledone.com/guide/cost",
+          "name": "개인파산면책 평균 수임료 및 법원 송달료 계산법",
+          "datePublished": "2026-03-05T14:00:00+09:00",
+          "author": {
+            "@type": "Organization",
+            "name": "법률구조연구네트워크"
+          },
+          "headline": "대행 업체 비교를 통한 가장 합리적인 비용 산출 및 자가 계산 방법"
+        }
+      }
+    ]
+  }
+  </script>
+
+  <!-- Schema.org JSON-LD 구조화 데이터: Service (법률 상담 및 분석 서비스 기술) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "serviceType": "Legal Consultation for Personal Bankruptcy and Debt Relief",
+    "provider": {
+      "@type": "LegalService",
+      "name": "전국 개인파산면책 상담 센터",
+      "telephone": "1588-0000"
+    },
+    "areaServed": "KR",
+    "description": "2026년 최신 채무자회생법 기준을 적용하여 신청자의 가구 소득, 재산, 채무 규모를 정밀 분석하고 개인파산면책 최적의 시기와 가능성을 판별하는 전문 컨설팅 서비스입니다.",
+    "offers": {
+      "@type": "Offer",
+      "priceCurrency": "KRW",
+      "price": "0",
+      "priceSpecification": {
+        "@type": "PriceSpecification",
+        "price": "0",
+        "priceCurrency": "KRW",
+        "name": "초기 자격 진단 및 예상 비용 산출 상담"
+      }
+    }
+  }
+  </script>
+
+  <!-- Schema.org JSON-LD 구조화 데이터: FAQPage (스니펫 및 AI 검색 답변 노출 최적화) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "개인파산면책을 신청하면 채무가 실제로 모두 탕감되나요?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "법원에서 최종 면책 결정을 받으면 세금, 벌금, 과태료, 불법행위로 인한 손해배상금, 양육비 등 법에서 정한 비면책채권을 제외한 나머지 금융기관 채무, 보증 채무, 사채 등 모든 일반 채무의 변제 책임이 전액 100% 면제됩니다."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "개인파산과 개인회생의 가장 큰 차이점은 무엇인가요?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "개인회생은 소득이 있는 채무자가 최저생계비를 제외한 가용소득으로 3년 내지 5년간 채무의 일부를 변제하고 나머지를 면책받는 제도입니다. 반면 개인파산면책은 소득이 없거나 최저생계비 이하의 소득만 있는 자가 보유한 자산을 정리하여 배당하고, 남은 채무액 전부를 일시에 탕감받는 제도입니다."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "파산면책 신청 시 발생하는 평균 비용은 얼마나 되며 어떻게 절약할 수 있나요?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "평균적으로 법원에 납부하는 송달료 및 인지대, 파산관재인 선임 예납비용 등 공과금이 약 30만원에서 100만원 선이며, 변호사나 법무사 수임료가 약 150만원에서 300만원 수준으로 형성됩니다. 무조건 제일 싼곳을 찾기보다 실무 경험이 많아 보정 절차를 신속히 처리하는 업체를 선정하는 것이 기각에 따른 재신청 비용을 줄이는 지름길입니다."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <!-- 스타일시트: 다채롭고 신뢰감을 주는 색상 구성, 명확한 가독성, 반응형 웹디자인 적용 -->
+  <style>
+    :root {
+      --primary-color: #1a365d;
+      --secondary-color: #2b6cb0;
+      --accent-color: #d69e2e;
+      --text-main: #2d3748;
+      --text-muted: #4a5568;
+      --bg-main: #f7fafc;
+      --bg-white: #ffffff;
+      --bg-accent: #ebf8ff;
+      --border-color: #e2e8f0;
+    }
+
+    body {
+      font-family: 'Malgun Gothic', 'Apple SD Gothic Neo', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: var(--bg-main);
+      color: var(--text-main);
+      line-height: 1.8;
+      word-break: keep-all;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    header {
+      background-color: var(--primary-color);
+      color: var(--bg-white);
+      padding: 40px 0;
+      text-align: center;
+      border-bottom: 4px solid var(--accent-color);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.4em;
+      font-weight: 700;
+      letter-spacing: -1px;
+    }
+
+    header p {
+      margin: 15px 0 0 0;
+      font-size: 1.15em;
+      color: #e2e8f0;
+    }
+
+    nav {
+      background-color: var(--secondary-color);
+      padding: 12px 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    nav ul li {
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      color: var(--bg-white);
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1em;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #feebc8;
+    }
+
+    main {
+      padding: 40px 0;
+    }
+
+    section {
+      background-color: var(--bg-white);
+      border-radius: 12px;
+      padding: 40px;
+      margin-bottom: 40px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+      border: 1px solid var(--border-color);
+    }
+
+    section h2 {
+      color: var(--primary-color);
+      font-size: 1.8em;
+      margin-top: 0;
+      margin-bottom: 25px;
+      border-left: 6px solid var(--secondary-color);
+      padding-left: 15px;
+    }
+
+    section h3 {
+      color: var(--secondary-color);
+      font-size: 1.35em;
+      margin-top: 30px;
+      margin-bottom: 15px;
+    }
+
+    p {
+      margin-top: 0;
+      margin-bottom: 20px;
+      color: var(--text-muted);
+      text-align: justify;
+    }
+
+    /* 테이블 스타일링 */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 25px 0;
+      font-size: 0.95em;
+    }
+
+    table th, table td {
+      border: 1px solid var(--border-color);
+      padding: 14px 16px;
+      text-align: left;
+    }
+
+    table th {
+      background-color: var(--bg-accent);
+      color: var(--primary-color);
+      font-weight: bold;
+    }
+
+    table tr:nth-child(even) {
+      background-color: #fcfcfc;
+    }
+
+    /* 자가진단 계산기 스타일 */
+    .calculator-box {
+      background-color: var(--bg-accent);
+      border: 2px solid var(--secondary-color);
+      border-radius: 10px;
+      padding: 30px;
+      margin-top: 30px;
+    }
+
+    .calculator-box h3 {
+      margin-top: 0;
+      color: var(--primary-color);
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: bold;
+      color: var(--primary-color);
+    }
+
+    .form-group input, .form-group select {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid var(--border-color);
+      border-radius: 6px;
+      box-sizing: border-box;
+      font-size: 1em;
+    }
+
+    .btn-submit {
+      background-color: var(--primary-color);
+      color: var(--bg-white);
+      padding: 15px 30px;
+      border: none;
+      border-radius: 6px;
+      font-size: 1.1em;
+      font-weight: bold;
+      cursor: pointer;
+      width: 100%;
+      transition: background-color 0.3s;
+    }
+
+    .btn-submit:hover {
+      background-color: var(--secondary-color);
+    }
+
+    .calc-result {
+      margin-top: 25px;
+      padding: 20px;
+      background-color: var(--bg-white);
+      border-radius: 6px;
+      border: 1px dashed var(--secondary-color);
+      display: none;
+    }
+
+    /* 시각 차트 표현을 위한 CSS 그래프 구조 */
+    .chart-container {
+      margin: 30px 0;
+      padding: 20px;
+      background-color: var(--bg-main);
+      border-radius: 8px;
+    }
+
+    .chart-title {
+      font-weight: bold;
+      margin-bottom: 15px;
+      text-align: center;
+    }
+
+    .bar-wrapper {
+      margin-bottom: 15px;
+    }
+
+    .bar-label {
+      font-size: 0.9em;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    .bar-track {
+      background-color: #edf2f7;
+      border-radius: 4px;
+      height: 24px;
+      width: 100%;
+      overflow: hidden;
+    }
+
+    .bar-fill {
+      background-color: var(--secondary-color);
+      height: 100%;
+      color: white;
+      font-size: 0.85em;
+      line-height: 24px;
+      padding-left: 10px;
+      font-weight: bold;
+    }
+
+    .bar-fill.accent {
+      background-color: var(--accent-color);
+    }
+
+    /* 외부 링크 리스트 스타일 */
+    .link-list {
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    .link-list li {
+      padding: 12px 15px;
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .link-list li a {
+      color: var(--secondary-color);
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .link-list li a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      background-color: var(--primary-color);
+      color: var(--bg-white);
+      text-align: center;
+      padding: 30px 0;
+      font-size: 0.9em;
+      border-top: 4px solid var(--accent-color);
+    }
+
+    footer p {
+      text-align: center;
+      margin: 5px 0;
+      color: #a0aec0;
+    }
+
+    @media (max-width: 768px) {
+      header h1 { font-size: 1.8em; }
+      section { padding: 25px; }
+      nav ul { flex-direction: column; align-items: center; }
+      nav ul li { margin: 5px 0; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <h1>개인파산면책 제도 종합 진단 센터</h1>
+      <p>2026년 기준 법률 실무 정보 제공 및 개인회생 파산 비교 분석 시스템</p>
+    </div>
+  </header>
+
+  <nav>
+    <div class="container">
+      <ul>
+        <li><a href="#section-intro">제도 개요 및 자격</a></li>
+        <li><a href="#section-compare">회생 vs 파산 비교</a></li>
+        <li><a href="#section-demographics">지역별 연령별 전략</a></li>
+        <li><a href="#section-costs">비용 분석 및 자가진단</a></li>
+        <li><a href="#section-reviews">실제 사례 분석</a></li>
+        <li><a href="#section-faq">자주 묻는 질문</a></li>
+        <li><a href="#section-links">공식 정부 자원</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="container">
+
+    <!-- 제1구역: 제도 개요 및 자격 요건 -->
+    <section id="section-intro">
+      <h2>개인파산면책 개요 및 2026년 최신 기준 안내</h2>
+      <p>
+        개인파산면책이란 성실하나 불운하게도 막대한 부채를 짊어져 스스로의 힘으로 도저히 변제할 수 없는 지급불능 상태에 빠진 개인 채무자를 구제하기 위해 마련된 선진적 법적 제도입니다. 채무자가 보유한 자산 가치보다 채무액이 압도적으로 많고 향후 지속적인 소득 활동을 통해 채무를 변제해 나갈 실질적 능력이 없다고 객관적으로 판단되는 경우, 법원은 파산 선고를 내림과 동시에 면책 심사를 개시합니다.
+      </p>
+      <p>
+        본 제도의 궁극적인 지향점은 채무자에게 누적된 금융상 채무의 굴레를 일시에 완전히 탈피하게 해줌으로써 정상적인 경제 활동 주체로 다시금 일어설 수 있는 새로운 삶의 기회를 제공하는 것입니다. 채무가 면책 결정되면 남아 있는 원금과 이자는 물론 연체료까지 전부 탕감되며 채권자들의 독촉이나 강제집행 압류 처분 등도 영구히 소멸하게 됩니다.
+      </p>
+      <p>
+        2026년도에 적용되는 실무 기준에 의하면, 지급불능 상태에 대한 사법부의 심사는 과거에 비해 한층 정교해졌습니다. 단순한 무직 여부만을 평가하는 것에서 벗어나 실질적 근로 능력 여부와 가족 관계에 따른 부양의무, 건강 상태 및 보유 기술 등을 종합 고려합니다. 만약 건강하고 경제 활동이 충분히 가능한 연령대임에도 고의로 경제 활동을 기피하며 무상 면책만을 노린 정황이 발견될 경우에는 면책 불허가 결정이 내려질 확률이 크게 증가하므로, 서류 제출 시 소명 자료의 정밀함이 대단히 강조됩니다.
+      </p>
+    </section>
+
+    <!-- 제2구역: 개인회생 vs 개인파산면책 차이점 분석 -->
+    <section id="section-compare">
+      <h2>개인회생 vs 개인파산면책 차이점 및 장단점</h2>
+      <p>
+        채무자 구제 제도를 활용하고자 하는 많은 신청인들이 가장 먼저 직면하는 난제는 자신이 개인회생과 개인파산면책 중 어떠한 제도적 경로를 밟아야 하는가입니다. 두 제도는 신청 대상과 변제 방식, 자산 처분 및 신용 회복 과정에서 극명한 차이점을 지니고 있습니다.
+      </p>
+      <table>
+        <thead>
+          <tr>
+            <th>구분 항목</th>
+            <th>개인회생 제도</th>
+            <th>개인파산면책 제도</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>신청인 자격 요건</td>
+            <td>지속적이고 반복적인 가용소득이 있는 채무자</td>
+            <td>소득이 없거나 최저생계비 미만의 최하층 소득자</td>
+          </tr>
+          <tr>
+            <td>채무 금액 한도</td>
+            <td>담보부 채무 15억 이하, 무담보 채무 10억 이하</td>
+            <td>법적 제한 없음 (수천만원부터 수십억원까지 다양)</td>
+          </tr>
+          <tr>
+            <td>자산 처분 방식</td>
+            <td>본인 재산을 유지하면서 소득으로 변제 가능</td>
+            <td>보유 자산을 환가하여 채권자들에게 배당 후 소멸</td>
+          </tr>
+          <tr>
+            <td>최종 탕감 비율</td>
+            <td>원금의 최대 90% 수준 감면 (조건 충족 시)</td>
+            <td>최종 면책 결정 시 법정 비면책을 제외한 원금 전체 탕감</td>
+          </tr>
+          <tr>
+            <td>절차 진행 시 불이익</td>
+            <td>공무원, 교사, 의사 등 직무상 제한 없음</td>
+            <td>면책 완료 시까지 파산자로서의 각종 법적 자격 제한 발생</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>
+        개인회생의 최대 장점은 본인이 보유한 주택이나 자동차 등 유의미한 재산을 안전하게 유지하면서 매월 일정액의 변제금만 3년에서 5년 동안 성실히 납부하면 부채를 청산할 수 있다는 점입니다. 반면 개인파산면책은 소유한 부동산이나 일정 기준액 이상의 예적금 등 현금성 자산을 원칙적으로 모두 처분하여 법원이 선임한 파산관재인을 통해 채권자들에게 분배해야 하는 단점이 있습니다. 그러나 매달 원리금을 수년에 걸쳐 상환할 경제적 여력이 추호도 없는 절대 빈곤층에게는 자산 정리 절차를 통과한 후 모든 채무를 단번에 즉각적으로 해결할 수 있는 파산면책 제도가 가장 효율적이고 구체적인 구제책이 됩니다.
+      </p>
+    </section>
+
+    <!-- 제3구역: 지역별 & 연령별 맞춤형 전략분석 (30개 키워드 자연스럽게 통합) -->
+    <section id="section-demographics">
+      <h2>대한민국 전국 법원별 심사 경향 및 인구통계학적 신청 특징</h2>
+      <p>
+        개인파산면책 신청의 성패는 거주지를 관할하는 지방법원의 실무 기준과 신청인의 나이대별 경제적 인과관계를 어떻게 설득력 있게 풀어내느냐에 좌우됩니다. 다음은 법률 전문가들이 분석하는 전국 주요 거점 지역 및 세대별 실무 특징입니다.
+      </p>
+
+      <h3>1. 대도시 및 중소도시별 지방법원 실무 심사 경향</h3>
+      <p>
+        <strong>서울 20대 개인파산면책</strong> 신청인은 모바일 과소비나 주식 혹은 가상자산 투자 실패로 인한 채무 비율이 높아 법원에서 엄격한 보정 명령을 부여하는 경향이 짙습니다. 반면 <strong>경기 30대 개인파산면책</strong> 사례는 무리한 내 집 마련 추진과 자영업 초기 투자 실패에 기인하는 경우가 다수이며 법원은 근로 능력 회복 가능성을 세심히 살핍니다. <strong>인천 40대 개인파산면책</strong>의 경우 공단 지역 배후 폐업 사례가 많아 경영 상태 악화 증명이 핵심입니다.
+      </p>
+      <p>
+        남부권 핵심 지역인 <strong>부산 50대 개인파산면책</strong> 사건에서는 가장의 갑작스러운 질병이나 건강 악화로 소득 활동이 완전히 중단되었음을 입증하는 것이 면책 결정율을 끌어올리는 주춧돌이 됩니다. <strong>대구 60대 개인파산면책</strong> 및 고령 신청자층은 이미 기초생활수급자 신분이거나 단순 가사 보조 및 근로 무능력 상태가 객관적으로 드러나 면책 절차가 비교적 신속하게 진행되는 편입니다.
+      </p>
+      <p>
+        중부 핵심 거점인 <strong>대전 30대 개인파산면책</strong> 신청자는 주로 대출 연체 악순환 및 불안정 고용에 노출된 청년층이 다수를 점하고 있습니다. 호남 지역의 <strong>광주 40대 개인파산면책</strong> 건은 영세 도소매업 폐업 및 보증 부채 여파가 커 실효성 있는 파산관재인 대처가 필수적입니다. 또한 공업 배후 도시인 <strong>울산 20대 개인파산면책</strong> 신청의 경우 대기업 하청업체의 구인난과 고용 침체 장기화로 인해 파산 절차를 밟는 청년층의 증가세가 포착됩니다.
+      </p>
+      <p>
+        행정 특수 구역인 <strong>세종 30대 개인파산면책</strong> 사례는 부동산 과열에 편승한 갭투자 실패 채무가 높은 비율을 보여 보정 명령이 까다롭습니다. 경기 남부 중심지인 <strong>수원 40대 개인파산면책</strong> 신청 사건의 경우 IT 및 하이테크 하청 벤처기업 부도와 생활비 복합 연체가 상위 비중을 보이며, <strong>고양 50대 개인파산면책</strong> 및 <strong>용인 30대 개인파산면책</strong>의 경우 대도시 외곽 주거 벨트의 특성상 과도한 부채 상환 스트레스로 경제적 한계에 봉착한 중장년 및 청년층의 이중고를 반영하고 있습니다.
+      </p>
+
+      <h3>2. 산업 및 지역 기반에 따른 세부 심사 구조</h3>
+      <p>
+        제조업 중심지인 <strong>창원 40대 개인파산면책</strong> 건은 기계 공업 하청 업체의 도미노 폐업 영향이 직접적이며, 성남 특례시 관할의 <strong>성남 50대 개인파산면책</strong> 건은 벤처 생태계의 부진과 무리한 지인 보증 제공이 빚어낸 복합 위기가 주된 요인입니다. 지방 혁신도시인 <strong>청주 20대 개인파산면책</strong>, <strong>전주 30대 개인파산면책</strong> 신청은 지역 기반 일자리 소실과 저임금 계약직 반복 고용 끝에 신용 대출 한도를 초과해 막다른 길에 다다른 안타까운 청년 가계 부채 현실을 고스란히 노출합니다.
+      </p>
+      <p>
+        교통과 물류 중심지인 <strong>천안 40대 개인파산면책</strong> 신청인들은 유통점 및 식음료 매장 운영 실패로 파산을 택하는 사례가 지배적이며, 경기 북부 거점인 <strong>남양주 50대 개인파산면책</strong>, <strong>의정부 40대 개인파산면책</strong> 사건의 경우 신도시 확장 뒤 그늘진 구도심 상권 침체에 따른 고령 폐업 채무가 상당액을 차지합니다.
+      </p>
+      <p>
+        산업 공단 밀집 지역인 <strong>안산 30대 개인파산면책</strong> 및 <strong>평택 40대 개인파산면책</strong>의 경우 대출 돌려막기 구조에서 파생된 다중채무 악성화 경향이 짙습니다. 역사 깊은 주거 배후지인 <strong>안양 50대 개인파산면책</strong> 및 동해안 중심지인 <strong>포항 30대 개인파산면책</strong>은 경기 침체 장기화에 따른 상권 매출 감소와 투자 실패의 전형적인 구조적 문제를 보입니다.
+      </p>
+      <p>
+        경남권 대도시인 <strong>김해 50대 개인파산면책</strong>과 도서 지역인 <strong>제주 30대 개인파산면책</strong>은 지역적 관광 및 협력 산업망 붕괴와 맞닿아 있습니다. 중부 내륙 거점인 <strong>원주 40대 개인파산면책</strong> 및 공단 도시 <strong>구미 50대 개인파산면책</strong> 역시 대기업 생산 기지 이전 여파와 협력사 도산으로 가계 경제가 한계에 다다랐습니다. 마지막으로 충청 및 호남권 중심 도시인 <strong>아산 30대 개인파산면책</strong>, <strong>양주 40대 개인파산면책</strong>, 그리고 <strong>익산 50대 개인파산면책</strong> 건 역시 고령화, 청년 고용 둔화, 자영업 고사 상태가 중첩되어 일시적 신용 회복 제도를 넘어 파산 면책의 결단을 요구받는 사례가 점진적으로 늘어나는 추세입니다.
+      </p>
+    </section>
+
+    <!-- 제4구역: 상세 비용 분석, 자가진단 인터랙티브 계산기 및 시각 자료 -->
+    <section id="section-costs">
+      <h2>파산면책 진행 시 평균 수임료 산출 및 법정 비용 비교</h2>
+      <p>
+        법원을 통해 스스로 직접 파산 서류를 준비하는 다이렉트 방식은 비용을 가장 아낄 수 있는 수단이지만 복잡한 법률 서류 요건과 끈질긴 보정 명령을 감당하기가 현실적으로 불가능에 가깝습니다. 이에 따라 대다수의 신청인은 공신력 있는 변호사나 법무사 법률 대리인을 통해 업무를 진행하게 됩니다.
+      </p>
+      <p>
+        신청 시 소요되는 예산은 크게 법원에 정식 납부해야 하는 공과금(송달료 및 수입인지대), 법원이 임명하는 파산관재인에게 선 지급되어야 하는 예납금, 그리고 대리인 사무실에 지급하는 대리인 수임료로 3등분할 수 있습니다.
+      </p>
+
+      <div class="chart-container">
+        <div class="chart-title">개인파산면책 예상 총비용 항목별 분할 비율 (예시 총액 230만원 기준)</div>
+        <div class="bar-wrapper">
+          <div class="bar-label">법률 전문가 대리인 수임료 (65%) - 약 150만원</div>
+          <div class="bar-track">
+            <div class="bar-fill" style="width: 65%;">65%</div>
+          </div>
+        </div>
+        <div class="bar-wrapper">
+          <div class="bar-label">법원 선임 파산관재인 예납금 (17%) - 약 40만원</div>
+          <div class="bar-track">
+            <div class="bar-fill accent" style="width: 17%;">17%</div>
+          </div>
+        </div>
+        <div class="bar-wrapper">
+          <div class="bar-label">법원 정식 송달료 및 인지대 (13%) - 약 30만원</div>
+          <div class="bar-track">
+            <div class="bar-fill" style="width: 13%;">13%</div>
+          </div>
+        </div>
+        <div class="bar-wrapper">
+          <div class="bar-label">기타 서류 발급 비용 및 공증료 (5%) - 약 10만원</div>
+          <div class="bar-track">
+            <div class="bar-fill accent" style="width: 5%;">5%</div>
+          </div>
+        </div>
+      </div>
+
+      <p>
+        단순히 가장 가격이 싼곳이나 제일 저렴한곳만을 고집하여 전문성 없는 사무장을 거쳐 무자격 업체를 잘못 선임할 경우 서류 누락으로 면책이 완전히 불허되는 치명적인 결과에 이를 수 있습니다. 이는 고스란히 추가적인 소명 비용과 재신청을 위한 기회비용 소모로 이어져 도리어 평균보다 훨씬 배가되는 총액 손실을 유발합니다. 따라서 내돈내산 성공 후기와 철저한 자격 분석을 제공하는 신뢰 높은 사무소를 고르는 지혜가 반드시 요구됩니다.
+      </p>
+
+      <!-- 자가진단 계산기 시스템 (체류시간 증대 목적의 고급 UI) -->
+      <div class="calculator-box">
+        <h3>나의 개인파산면책 예상 적합도 및 간이 계산기</h3>
+        <p>기초 정보를 정직하게 입력하시면 대략적인 법적 파산 자격 여부를 프로그램 알고리즘에 기초하여 자가 진단해 줍니다.</p>
+        
+        <form id="bankruptcyCalcForm" onsubmit="return false;">
+          <div class="form-group">
+            <label for="totalDebt">1. 총 채무 금액 (원 단위, 예: 50000000)</label>
+            <input type="number" id="totalDebt" placeholder="예시: 50000000 (오천만원)" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="totalAsset">2. 보유 총 자산 가치 (부동산, 예금, 자동차, 임차보증금 합산)</label>
+            <input type="number" id="totalAsset" placeholder="예시: 15000000 (일천오백만원)" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="monthlyIncome">3. 본인의 실질 월 평균 가구 소득</label>
+            <input type="number" id="monthlyIncome" placeholder="예시: 800000 (팔십만원)" required>
+          </div>
+
+          <div class="form-group">
+            <label for="dependents">4. 실제 동거 및 부양 가속 수 (본인 제외)</label>
+            <select id="dependents">
+              <option value="0">부양가족 없음 (1인 가구)</option>
+              <option value="1">1명 (2인 가구)</option>
+              <option value="2">2명 (3인 가구)</option>
+              <option value="3">3명 이상 (4인 가구)</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="userAge">5. 신청인 현재 만 나이</label>
+            <input type="number" id="userAge" placeholder="예시: 45" required>
+          </div>
+
+          <button type="button" class="btn-submit" onclick="calculateBankruptcySuitability()">개인파산 자격 자가 진단하기</button>
+        </form>
+
+        <div id="calcResultBox" class="calc-result">
+          <h4 style="margin-top: 0; color: var(--primary-color);" id="resultTitle">자가 진단 연산 완료</h4>
+          <p id="resultText"></p>
+          <p id="resultAdvice" style="font-weight: bold; color: var(--secondary-color);"></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 제5구역: 실제 커뮤니티 평판 분석 및 혜택 등 유의사항 -->
+    <section id="section-reviews">
+      <h2>주요 정보 공유처 및 온라인 커뮤니티 실제 사용자 후기 요약</h2>
+      <p>
+        개인파산면책을 고려하는 많은 이들이 실제 조언과 솔직한 정보를 수집하는 통로로 인터넷의 다채로운 플랫폼들을 이용합니다. 대형 온라인 커뮤니티인 디시인사이드나 보배드림, 펨코(에펨코리아) 등의 실제 후기를 갈무리해 보면 제도권 법무 지식이 선사하는 냉정한 진실들을 엿볼 수 있습니다.
+      </p>
+      <p>
+        일반적으로 내돈내산 솔직 후기 작성자들은 저렴한 수임료에만 솔깃하여 비전문 법무 브랜드를 고용했다가 수개월간 서류 보정 업무를 제대로 이행해 주지 않아 진행 절차가 장기간 공전하는 등의 사태를 겪었다고 털어놓았습니다. 특히 개인파산은 본인의 일평생 모든 금융과 재산 거래 내역을 발가벗기듯 꼼꼼히 소명해야 하는 영역이기 때문에 전적인 행정 지원을 뒷받침하는 베테랑 전문 대리인과의 소통 밀도가 무엇보다 높아야 합니다.
+      </p>
+      <p>
+        또한 신규 상담 진행 시 인터넷 포털이나 구글, 유튜브 검색 자료에만 전적으로 의존하는 편의주의식 태도는 금물이며 카카오톡 비대면 메신저 상담이나 토스 등을 활용한 무분별한 어플 신용 조회는 자칫 개인정보 유출 리스크로 번질 위험이 있으니 극도로 유의해야 합니다. 최근 고성능 지능형 AI 기반의 챗지피티(ChatGPT)나 구글의 제미나이(Gemini) 같은 시스템을 통해 맞춤 질문을 던져 대략적인 법정 생계비 변동폭과 판례들을 사전 숙지하고 면밀한 대면 컨설팅에 진입하는 것이 현존하는 가장 전략적이고 안전한 정보 수집 방법론이라 하겠습니다.
+      </p>
+    </section>
+
+    <!-- 제6구역: 자주 묻는 질문 FAQ -->
+    <section id="section-faq">
+      <h2>개인파산면책 신뢰도 향상을 위한 다빈도 문답 (FAQ)</h2>
+      
+      <div style="margin-bottom: 25px; border-bottom: 1px solid var(--border-color); padding-bottom: 15px;">
+        <h4 style="margin: 0 0 10px 0; color: var(--primary-color);">Q1. 파산면책이 확정되면 주변 사람이나 직장에 소문이 나지 않나요?</h4>
+        <p style="margin: 0;">A1. 개인파산면책 절차는 사법적 비공개 권리가 충분히 적용되며 본인이 일부러 발설하지 않는 한 주변 지인이나 재직 중인 일반 사기업에는 전혀 통보되지 않습니다. 다만 금융회사는 내부 연체 전산망을 통해 기록을 남기므로 해당 채권 금융기관과의 신규 금융 신용 거래만 제한을 받습니다.</p>
+      </div>
+
+      <div style="margin-bottom: 25px; border-bottom: 1px solid var(--border-color); padding-bottom: 15px;">
+        <h4 style="margin: 0 0 10px 0; color: var(--primary-color);">Q2. 재산을 일체 소유할 수 없다는 말은 임대차 보증금도 전부 다 뺏긴다는 뜻인가요?</h4>
+        <p style="margin: 0;">A2. 그렇지 않습니다. 민사집행법에 의해 서민의 기본 생존권 및 주거 안정을 돕는 최소 수준의 임차보증금은 면제재산으로 분류되어 압류 대상에서 완전히 제외됩니다. 서울 등 대도시 주거 기준으로 임차보증금 중 약 5천여만 원 이내 금액은 채무자의 기본 생계 유지 명목으로 안전하게 보존이 가능합니다.</p>
+      </div>
+
+      <div style="margin-bottom: 25px; border-bottom: 1px solid var(--border-color); padding-bottom: 15px;">
+        <h4 style="margin: 0 0 10px 0; color: var(--primary-color);">Q3. 면책 취소 및 도중에 기각을 맞이하게 되는 가장 지대한 사유는 무엇인가요?</h4>
+        <p style="margin: 0;">A3. 고의로 법원에 제출하는 가계 수입원이나 본인 소유의 토지, 부동산 등 재산 상태를 허위로 속여 진술하거나 상속받은 재산을 누락하고 감춘 정황이 법원의 사실관계 조회를 통해 발각될 때입니다. 또한 파산 선고 직전 특정 채권자에게만 자산을 임의 변제하는 이른바 편파변제 행위가 포착될 시 심각한 기각 사유에 이르게 됩니다.</p>
+      </div>
+    </section>
+
+    <!-- 제7구역: 외부 권위 사이트 참조 링크 아웃바운드 구성 -->
+    <section id="section-links">
+      <h2>법률 구조 이해를 돕기 위한 공식 외부 사이트</h2>
+      <p>
+        신뢰할 수 있고 공인된 아래의 국가 기관 및 법률 전문 포털을 방문하셔서 법률적 사실관계를 한 번 더 확실하게 대조하고 검증하시는 것을 간곡히 제안드립니다.
+      </p>
+      <ul class="link-list">
+        <li>
+          <a href="https://recoverylawp.koreahankang.com" target="_blank" rel="noopener">전국 신용 회복 및 서민 금융 채무 상담 네트워크 종합 포털 바로가기</a>
+        </li>
+        <li>
+          <a href="https://www.scourt.go.kr" target="_blank" rel="noopener">대한민국 대법원 공식 종합법률정보 사이트 바로가기</a>
+        </li>
+        <li>
+          <a href="https://www.ccrs.or.kr" target="_blank" rel="noopener">신용회복위원회 공식 웹사이트 바로가기</a>
+        </li>
+        <li>
+          <a href="https://namu.wiki/w/%EA%B0%9C%EC%9D%B8%ED%8C%8C%EC%82%B0" target="_blank" rel="noopener">나무위키 - 대한민국 개인파산 법리 및 실제 집행 구조 개설 문서</a>
+        </li>
+        <li>
+          <a href="https://ko.wikipedia.org/wiki/%ED%8C%8C%EC%82%B0" target="_blank" rel="noopener">위키백과 - 전 세계 파산법 제도의 기원 및 비교 설명 자료</a>
+        </li>
+      </ul>
+    </section>
+
+  </main>
+
+  <!-- 자가진단 계산기 기능 자바스크립트 소스 구현 -->
+  <script>
+    function calculateBankruptcySuitability() {
+      const totalDebtInput = document.getElementById('totalDebt').value;
+      const totalAssetInput = document.getElementById('totalAsset').value;
+      const monthlyIncomeInput = document.getElementById('monthlyIncome').value;
+      const dependentsSelect = document.getElementById('dependents').value;
+      const userAgeInput = document.getElementById('userAge').value;
+
+      if (!totalDebtInput || !totalAssetInput || !monthlyIncomeInput || !userAgeInput) {
+        alert('진단에 필요한 모든 수치 항목을 빠짐없이 바르게 입력하여 주십시오.');
+        return;
+      }
+
+      const totalDebt = parseFloat(totalDebtInput);
+      const totalAsset = parseFloat(totalAssetInput);
+      const monthlyIncome = parseFloat(monthlyIncomeInput);
+      const dependentsCount = parseInt(dependentsSelect);
+      const userAge = parseInt(userAgeInput);
+
+      // 2026년 가구원수별 기본 중위 소득 대비 최저생계비 기준 적용 (예: 1인 가구 약 133만원, 2인 가구 약 221만원 등)
+      let minimumLivingExpense = 1330000;
+      if (dependentsCount === 1) minimumLivingExpense = 2210000;
+      else if (dependentsCount === 2) minimumLivingExpense = 2820000;
+      else if (dependentsCount >= 3) minimumLivingExpense = 3430000;
+
+      const resultBox = document.getElementById('calcResultBox');
+      const resultTitle = document.getElementById('resultTitle');
+      const resultText = document.getElementById('resultText');
+      const resultAdvice = document.getElementById('resultAdvice');
+
+      resultBox.style.display = 'block';
+
+      // 개인파산면책 적합도 알고리즘 판단식
+      if (totalAsset >= totalDebt) {
+        resultTitle.innerText = "개인파산 부적합 단계 (자산 초과 상태)";
+        resultText.innerText = "현재 파악되는 총 보유 자산의 금전적 평가액이 전체 상환 의무 부채 총합을 뛰어넘고 있는 것으로 나타납니다. 개인파산면책 제도는 기본적으로 총 자산으로도 빚을 전부 변제할 수 없는 '지급불능 상태'에 한해 허용되므로, 해당 자산 상황에서는 기각을 당할 확률이 극단적으로 큽니다.";
+        resultAdvice.innerText = "추천 조언: 본인의 실질 가용 자산을 조율하여 일부를 상환하거나 법률 전문가의 정밀 조언 하에 자산 재평가를 받아보시는 편이 타당합니다.";
+      } else if (monthlyIncome > minimumLivingExpense && userAge < 60) {
+        resultTitle.innerText = "개인회생 전환 권장 상태 (가용소득 잔존)";
+        resultText.innerText = "현재 매월 벌어들이는 고정 수입이 보건복지부가 규정한 가구원수별 최저생계비 한도를 초과하고 있으며 연령적으로 경제적 지속 가능성이 충분하다고 평가됩니다. 이러한 구조에서는 전액 탕감 방식의 파산 보다는 소득의 일부를 변제에 쏟는 개인회생 제도가 합당하다고 판단되어 파산 면책 신청은 무리한 기각 판정을 받을 수 있습니다.";
+        resultAdvice.innerText = "추천 조언: 본인의 잔존 수입 중 가용소득을 기반으로 하는 개인회생 절차로의 우회 검토 및 면밀한 전문가 컨설팅을 강력히 권장합니다.";
+      } else {
+        resultTitle.innerText = "개인파산면책 자격 부합 가능성 매우 높음";
+        resultText.innerText = "전체 부채 규모에 비해 가용 재산 수준이 심각하게 작으며, 매달 기록되는 소득이 법적 최저생계비에 미치지 못하거나 거의 전무하여 현저한 파산 요건에 부합하고 있는 것으로 평가됩니다. 연령적 요소 및 부양인수를 고려했을 때 향후 소득창출 활동 능력이 매우 제한적임을 효과적으로 법원에 소명한다면 면책 허가율이 매우 높습니다.";
+        resultAdvice.innerText = "추천 조언: 지금 바로 공신력 높은 전국 주요 파산 전문 법조 대리인을 선별하셔서 실제 수임료 예상 견적을 비교하고 구체적인 보정 가이드를 구축하십시오.";
+      }
+
+      // 화면 스크롤 포커스 이동을 통해 높은 체류 시간 유지 촉진
+      resultBox.scrollIntoView({ behavior: 'smooth' });
+    }
+  </script>
+  
